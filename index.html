@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skrining Merokok Anak Sekolah</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <!-- stepper -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <div class="container pt-5">
+        <h1 id="title-container" class="text-center">
+            <strong>FORM SURVEY</strong>
+        </h1>
+        <h4 class="text-center judul">KUESIONER SKRINING PERILAKU MEROKOK BAGI ANAK USIA SEKOLAH</h4>
+
+        <!-- COLLAPSIBLE -->
+        <p class="text-center mt-5">
+            <a class="btn btn-warning text-white" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Baca Informasi
+            </a>
+
+        </p>
+        <!-- <div class="collapse" id="collapseExample">
+            <div class="card card-body ">
+                <p class="text-justify">
+                    Skrining perilaku merokok bagi anak usia sekolah dilaksanakan untuk melihat gambaran
+                    masalah perilaku merokok pada anak usia 10-18 tahun sesuai dengan target indikator RPJMN
+                    tahun 2020-2024.
+
+                <h5>Sasaran :</h5>
+                Skrining perilaku merokok anak usia sekolah 10 - 18 tahun atau kelas 4 s/d 10.
+
+                <h5 class="mt-3">Metode :</h5> - Wawancara dengan kuesioner skrining perilaku merokok anak
+                sekolah
+                - Pemeriksaan kadar CO pernapasan (menyesuaikan ketersediaan sarana/prasarana)
+
+                <h5 class="mt-3">Pelaksanaan :</h5>
+                Skrining dilaksanakan bersamaan dengan kegiatan Skrining Anak Sekolah, bekerjasama antara
+                Sekolah (UKS) dan Puskesmas.
+                </p>
+            </div>
+        </div> -->
+
+        <div class="stepwizard">
+            <div class="stepwizard-row setup-panel">
+                <div class="stepwizard-step col-xs-3">
+                    <a href="#step-1" type="button" class="btn btn-success btn-circle">1</a>
+                    <p><small>A</small></p>
+                </div>
+                <div class="stepwizard-step col-xs-3">
+                    <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                    <p><small>B</small></p>
+                </div>
+                <div class="stepwizard-step col-xs-3">
+                    <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                    <p><small>C</small></p>
+                </div>
+                <div class="stepwizard-step col-xs-3">
+                    <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
+                    <p><small>D</small></p>
+                </div>
+            </div>
+        </div>
+
+        <form role="form" class="container-fluid">
+            <div class="panel panel-primary setup-content" id="step-1">
+                <div class="panel-heading">
+                    <h3 class="panel-title">A. KETERANGAN TEMPAT</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label for="sekolah" class="control-label">A1. Nama Sekolah/Madrasah</label>
+                        <input maxlength="100" type="text" required="required" class="form-control"
+                            placeholder="Ketik di sini" name="sekolah" id="sekolah" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="provinsi" class="control-label">A2. Provinsi</label>
+                        <!-- <input maxlength="100" type="text" required="required" class="form-control"
+                            placeholder="Pilih Provinsi" name="provinsi" id="provinsi" /> -->
+                        <select class="js-example-basic-single form-control container" width="auto" name="provinsi"
+                            style="width: 100%;">
+                            <option value="" disabled="disabled" selected="selected">--Pilih Provinsi--</option>
+                            <option value="AL">Alabama</option>
+                            ...
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="kabkota" class="control-label">A3. Nama Kabupaten/Kota</label>
+                        <select class="js-example-basic-single form-control container" width="auto" name="kabkota"
+                            style="width: 100%;">
+                            <option value="" disabled="disabled" selected="selected">--Pilih Kab/Kota--</option>
+                            <option value="AL">Alabama</option>
+                            ...
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="puskesmas" class="control-label">A4. Nama Kabupaten/Kota</label>
+                        <select class="js-example-basic-single form-control container" width="auto" name="puskesmas"
+                            style="width: 100%;">
+                            <option value="" disabled="disabled" selected="selected">--Pilih Puskesmas--</option>
+                            <option value="AL">Alabama</option>
+                            ...
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+
+
+                    <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+                </div>
+            </div>
+
+            <div class="panel panel-primary setup-content" id="step-2">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Destination</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="control-label">Company Name</label>
+                        <input maxlength="200" type="text" required="required" class="form-control"
+                            placeholder="Enter Company Name" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Company Address</label>
+                        <input maxlength="200" type="text" required="required" class="form-control"
+                            placeholder="Enter Company Address" />
+                    </div>
+                    <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+                </div>
+            </div>
+
+            <div class="panel panel-primary setup-content" id="step-3">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Schedule</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="control-label">Company Name</label>
+                        <input maxlength="200" type="text" required="required" class="form-control"
+                            placeholder="Enter Company Name" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Company Address</label>
+                        <input maxlength="200" type="text" required="required" class="form-control"
+                            placeholder="Enter Company Address" />
+                    </div>
+                    <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+                </div>
+            </div>
+
+            <div class="panel panel-primary setup-content" id="step-4">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Cargo</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <label class="control-label">Company Name</label>
+                        <input maxlength="200" type="text" required="required" class="form-control"
+                            placeholder="Enter Company Name" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Company Address</label>
+                        <input maxlength="200" type="text" required="required" class="form-control"
+                            placeholder="Enter Company Address" />
+                    </div>
+                    <button class="btn btn-success pull-right" type="submit">Finish!</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- stepper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="src/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+</body>
+
+</html>
